@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Portofolio</title>
+  <link rel="icon" href="img/me.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div id="loader">
+      <div id="shadow"></div>
+      <div id="box"></div>
+    </div>
+  </div>
+
+  <div class="maincontent" style="display: none;">
+    <header>
+      <div class="navbar">
+        <nav class="nav">
+          <div class="logo">
+            <i><h3>z<span>m</span>.</h3></i>
+          </div>
+          <div class="navi">
+            <div id="nav-home" class="nav-item" data-target="#home">home</div>
+            <div id="nav-about" class="nav-item" data-target="#about-me">about me</div>
+            <div id="nav-skills" class="nav-item" data-target="#skills">skills</div>
+            <div id="nav-education" class="nav-item" data-target="#education">education</div>
+            <div id="nav-contact" class="nav-item" data-target="#contact-form">contact</div>
+          </div>
+          <div id="menu">
+            <i data-feather="menu" id="menu-icon"></i>
+            <i data-feather="x" id="x" style="display: none;"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile-menu">
+        <div id="mobile-nav-home" class="nav-item" data-target="#home">home</div>
+        <div id="mobile-nav-about" class="nav-item" data-target="#about-me">about me</div>
+        <div id="mobile-nav-skills" class="nav-item" data-target="#skills">skills</div>
+        <div id="mobile-nav-education" class="nav-item" data-target="#education">education</div>
+        <div id="mobile-nav-contact" class="nav-item" data-target="#contact-form">contact</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero" id="home">
+        <div class="content" id="gifSection">
+          <h2 class="mn">Hey I'm</h2>
+          <h1 class="name">Zaky <span>Mubarok</span></h1>
+          <p>I'm A <span class="writer"></span></p>
+        </div>
+      </div>
+      <div class="cut"></div>
+
+      <div class="content" id="about-me">
+        <div class="img"></div>
+        <div class="text">
+          <h3>About Me</h3>
+          <p>I am a passionate and driven high school student specializing in computer science with hands-on experience in web development, and ui/ux design. I am looking for an opportunity to contribute my talents to a forward-thinking company.</p>
+        </div>
+      </div>
+
+      <div class="cut"></div>
+
+      <div class="skills" id="skills">
+        <h3>Skills</h3>
+        <div class="skills-content">
+          <div class="skill">
+            <div class="icon"><i data-feather="layout"></i></div>
+            <p>UI/UX Design</p>
+            <p>Create user interfaces and user experiences that are engaging and user-friendly.</p>
+          </div>
+          <div class="skill">
+            <div class="icon"><i data-feather="code"></i></div>
+            <p>Web Programming</p>
+            <p>Programming to create a website that has been created ui/ux.</p>
+          </div>
+        </div>
+        <div class="programing">
+          <div class="pro-content">
+            <p>I continue to learn in the field of front-end development.</p>
+          </div>
+          <div class="pro-lang">
+            <ul>
+              <li><span>Html</span></li>
+              <li><span>Css</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>Python</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="education" id="education">
+        <h3><span>Education</span></h3>
+        <div class="edu">
+          <div class="line"><div></div></div>
+          <div class="edu-content">
+            <h4><span>SMKN 1 BANJAR</span></h4>
+            <p>pengembangan perangkat lunak dan gim</p>
+            <h6><span>2024 - Now</span></h6>
+          </div>
+        </div>
+        <div class="edu">
+          <div class="line"><div></div></div>
+          <div class="edu-content">
+            <h4><span>SMPN 1 BANJAR</span></h4>
+            <p>kurikulum 2013</p>
+            <h6>2021 - 2024</h6>
+          </div>
+        </div>
+        <div class="edu">
+          <div class="line"><div></div></div>
+          <div class="edu-content">
+            <h4><span>SDN 4 MEKARSARI</span></h4>
+            <p>pelajaran dasar</p>
+            <h6>2015 - 2021</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="cut"></div>
+
+      <div class="contact" id="contact">
+        <form id="contact-form">
+          <h3><span>Contact Me</span></h3>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <textarea id="message" placeholder="How can I help you?"></textarea>
+          <button type="button" onclick="sendWhatsAppMessage()">Send</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="cr"></div>
+      <div class="footer-bar">
+        <div class="social">
+          <p class="linkedin"><i data-feather="linkedin"></i></p>
+          <p class="instagram"><i data-feather="instagram"></i></p>
+          <p class="github"><i data-feather="github"></i></p>
+        </div>
+        <div class="mail" id="email">zakymubarok05022009@gmail.com</div>
+      </div>
+      <div class="cr">
+        © 2024 Zaky Mubarok. All Rights Reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
